@@ -1,0 +1,136 @@
+{
+  "property_types": {
+    "Land": "জমি",
+    "Flat": "ফ্ল্যাট",
+    "Plot": "প্লট",
+    "Mess": "মেস",
+    "House": "বাড়ি"
+  },
+  "transaction_types": {
+    "Sell": "বিক্রয়ের জন্য",
+    "Rent": "ভাড়ার জন্য"
+  },
+  "cities": {
+    "Dhaka": "ঢাকা",
+    "Chittagong": "চট্টগ্রাম",
+    "Sylhet": "সিলেট",
+    "Rajshahi": "রাজশাহী",
+    "Khulna": "খুলনা"
+  },
+  "neighborhoods": {
+    "Gulshan": "গুলশান",
+    "Banani": "বনানী",
+    "Dhanmondi": "ধানমন্ডি",
+    "Mirpur": "মিরপুর",
+    "Uttara": "উত্তরা",
+    "Agrabad": "আগ্রাবাদ"
+  },
+  "furnishing_types": {
+    "unfurnished": "আসবাবপত্রবিহীন",
+    "semi-furnished": "আংশিক সজ্জিত",
+    "fully-furnished": "সম্পূর্ণ সজ্জিত"
+  },
+  "construction_statuses": {
+    "Ready to Move": "থাকার জন্য প্রস্তুত",
+    "Under Construction": "নির্মাণাধীন",
+    "Upcoming": "আসন্ন"
+  },
+  "facing_directions": {
+    "North": "উত্তর",
+    "South": "দক্ষিণ",
+    "East": "পূর্ব",
+    "West": "পশ্চিম",
+    "North-East": "উত্তর-পূর্ব",
+    "North-West": "উত্তর-পশ্চিম",
+    "South-East": "দক্ষিণ-পূর্ব",
+    "South-West": "দক্ষিণ-পশ্চিম"
+  },
+  "property_conditions": {
+    "New": "নতুন",
+    "Resale": "পুনঃবিক্রয়",
+    "Used": "ব্যবহৃত",
+    "Renovated": "সংস্কারকৃত"
+  },
+  "amenities": {
+    "Parking": "পার্কিং",
+    "Lift": "লিফট",
+    "Security": "নিরাপত্তা",
+    "Gym": "জিম",
+    "Swimming Pool": "সুইমিং পুল",
+    "Balcony": "বারান্দা",
+    "Garden": "বাগান",
+    "Playground": "খেলার মাঠ",
+    "Community Hall": "কমিউনিটি হল",
+    "Backup Generator": "ব্যাকআপ জেনারেটর",
+    "CCTV": "সিসিটিভি",
+    "Intercom": "ইন্টারকম"
+  },
+  "nearby_place_types": {
+    "Hospital": "হাসপাতাল",
+    "School": "স্কুল",
+    "Market": "বাজার",
+    "Transport": "পরিবহন",
+    "Restaurant": "রেস্তোরাঁ",
+    "Other": "অন্যান্য"
+  },
+  "legal_verification_statuses": {
+    "Verified": "যাচাইকৃত",
+    "Pending": "অপেক্ষমাণ",
+    "Rejected": "প্রত্যাখ্যাত"
+  },
+  "property_statuses": {
+    "published": "প্রকাশিত",
+    "draft": "খসড়া",
+    "pending": "অপেক্ষমাণ"
+  },
+  "sort_options": {
+    "createdAt": "তারিখ",
+    "newest": "নতুন প্রথমে",
+    "oldest": "পুরাতন প্রথমে",
+    "price": "দাম",
+    "price-high": "দাম: বেশি থেকে কম",
+    "price-low": "দাম: কম থেকে বেশি",
+    "views_count": "দেখা",
+    "favorites_count": "পছন্দের",
+    "name": "নাম ক-য",
+    "progress": "সর্বাধিক অগ্রগতি",
+    "relevance": "সবচেয়ে প্রাসঙ্গিক"
+  },
+  "price_ranges": {
+    "0-500000": "৳৫ লাখের নিচে",
+    "500000-1000000": "৳৫-১০ লাখ",
+    "1000000-2000000": "৳১০-২০ লাখ",
+    "2000000-5000000": "৳২০-৫০ লাখ",
+    "5000000-10000000": "৳৫০ লাখ - ১ কোটি",
+    "10000000+": "৳১ কোটির উপরে"
+  },
+  "community_categories": {
+    "Investment": "বিনিয়োগ",
+    "Student": "ছাত্র",
+    "Regional": "আঞ্চলিক",
+    "Professional": "পেশাদার",
+    "Business": "ব্যবসা",
+    "Educational": "শিক্ষামূলক"
+  },
+  "user_types": {
+    "student": "ছাত্র",
+    "businessman": "ব্যবসায়ী",
+    "job_holder": "চাকরিজীবী",
+    "investor": "বিনিয়োগকারী",
+    "other": "অন্যান্য"
+  },
+  "document_types": {
+    "nid": "জাতীয় পরিচয়পত্র",
+    "smart_nid": "স্মার্ট এনআইডি",
+    "passport": "পাসপোর্ট",
+    "birth_certificate": "জন্ম সনদ"
+  },
+  "room_options": {
+    "any": "যেকোনো",
+    "1": "১",
+    "2": "২",
+    "3": "৩",
+    "4": "৪",
+    "5": "৫+"
+  }
+}

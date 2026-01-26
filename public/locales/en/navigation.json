@@ -1,0 +1,73 @@
+{
+  "header": {
+    "brand": "AmarPlot",
+    "nav": {
+      "buy": "Buy",
+      "rent": "Rent",
+      "sell": "Sell"
+    },
+    "actions": {
+      "search": "Search",
+      "messages": "Messages",
+      "notifications": "Notifications",
+      "saved_properties": "Saved Properties",
+      "post_property": "Post Property",
+      "profile": "Profile",
+      "dashboard": "Dashboard",
+      "drafts": "Drafts",
+      "settings": "Settings",
+      "logout": "Logout",
+      "login_register": "Login / Register"
+    },
+    "dropdowns": {
+      "my_account": "My Account",
+      "view_all_messages": "View all messages",
+      "view_all_notifications": "View all notifications",
+      "view_all_saved_properties": "View all saved properties"
+    },
+    "notifications_sample": {
+      "new_follower": "New follower",
+      "follower_description": "John Doe is now following you.",
+      "listing_saved": "Listing saved",
+      "listing_saved_description": "Someone saved your listing for \"Modern Apartment\".",
+      "new_community_post": "New community post",
+      "community_post_description": "A new post was added to the \"Dhaka Rent\" community."
+    },
+    "saved_properties_sample": {
+      "modern_apartment": "Modern Apartment",
+      "cozy_studio": "Cozy Studio",
+      "dhaka_location": "Dhaka, Bangladesh",
+      "chittagong_location": "Chittagong, Bangladesh"
+    }
+  },
+  "footer": {
+    "brand_description": "Your trusted partner in finding the perfect property. Buy, sell, or rent with confidence.",
+    "quick_links": {
+      "title": "Quick Links",
+      "buy_property": "Buy Property",
+      "rent_property": "Rent Property",
+      "sell_property": "Sell Property",
+      "map_search": "Map Search",
+      "communities": "Communities",
+      "price_trends": "Price Trends"
+    },
+    "support": {
+      "title": "Support",
+      "help_center": "Help Center",
+      "contact_us": "Contact Us",
+      "privacy_policy": "Privacy Policy",
+      "terms_of_service": "Terms of Service",
+      "about_us": "About Us"
+    },
+    "contact": {
+      "title": "Stay Updated",
+      "email": "info@amarplot.com",
+      "phone": "+880 1234-567890",
+      "address": "Dhaka, Bangladesh",
+      "newsletter_text": "Subscribe to our newsletter",
+      "email_placeholder": "Enter your email",
+      "subscribe_button": "Subscribe"
+    },
+    "copyright": "© 2024 AmarPlot. All rights reserved. Built with ❤️ for Bangladesh."
+  }
+}

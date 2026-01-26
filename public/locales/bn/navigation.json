@@ -1,0 +1,73 @@
+{
+  "header": {
+    "brand": "আমারপ্লট",
+    "nav": {
+      "buy": "কিনুন",
+      "rent": "ভাড়া",
+      "sell": "বিক্রি"
+    },
+    "actions": {
+      "search": "খুঁজুন",
+      "messages": "বার্তা",
+      "notifications": "বিজ্ঞপ্তি",
+      "saved_properties": "সংরক্ষিত সম্পত্তি",
+      "post_property": "সম্পত্তি পোস্ট করুন",
+      "profile": "প্রোফাইল",
+      "dashboard": "ড্যাশবোর্ড",
+      "drafts": "খসড়া",
+      "settings": "সেটিংস",
+      "logout": "লগআউট",
+      "login_register": "লগইন / নিবন্ধন"
+    },
+    "dropdowns": {
+      "my_account": "আমার অ্যাকাউন্ট",
+      "view_all_messages": "সব বার্তা দেখুন",
+      "view_all_notifications": "সব বিজ্ঞপ্তি দেখুন",
+      "view_all_saved_properties": "সব সংরক্ষিত সম্পত্তি দেখুন"
+    },
+    "notifications_sample": {
+      "new_follower": "নতুন অনুসরণকারী",
+      "follower_description": "জন ডো এখন আপনাকে অনুসরণ করছেন।",
+      "listing_saved": "তালিকা সংরক্ষিত",
+      "listing_saved_description": "কেউ আপনার \"আধুনিক অ্যাপার্টমেন্ট\" তালিকা সংরক্ষণ করেছেন।",
+      "new_community_post": "নতুন কমিউনিটি পোস্ট",
+      "community_post_description": "\"ঢাকা ভাড়া\" কমিউনিটিতে একটি নতুন পোস্ট যোগ করা হয়েছে।"
+    },
+    "saved_properties_sample": {
+      "modern_apartment": "আধুনিক অ্যাপার্টমেন্ট",
+      "cozy_studio": "আরামদায়ক স্টুডিও",
+      "dhaka_location": "ঢাকা, বাংলাদেশ",
+      "chittagong_location": "চট্টগ্রাম, বাংলাদেশ"
+    }
+  },
+  "footer": {
+    "brand_description": "নিখুঁত সম্পত্তি খোঁজার ক্ষেত্রে আপনার বিশ্বস্ত অংশীদার। আত্মবিশ্বাসের সাথে কিনুন, বিক্রি করুন বা ভাড়া নিন।",
+    "quick_links": {
+      "title": "দ্রুত লিংক",
+      "buy_property": "সম্পত্তি কিনুন",
+      "rent_property": "সম্পত্তি ভাড়া নিন",
+      "sell_property": "সম্পত্তি বিক্রি করুন",
+      "map_search": "ম্যাপ অনুসন্ধান",
+      "communities": "কমিউনিটি",
+      "price_trends": "দামের ট্রেন্ড"
+    },
+    "support": {
+      "title": "সহায়তা",
+      "help_center": "সহায়তা কেন্দ্র",
+      "contact_us": "যোগাযোগ করুন",
+      "privacy_policy": "গোপনীয়তা নীতি",
+      "terms_of_service": "সেবার শর্তাবলী",
+      "about_us": "আমাদের সম্পর্কে"
+    },
+    "contact": {
+      "title": "আপডেট থাকুন",
+      "email": "info@amarplot.com",
+      "phone": "+৮৮০ ১২৩৪-৫৬৭৮৯০",
+      "address": "ঢাকা, বাংলাদেশ",
+      "newsletter_text": "আমাদের নিউজলেটার সাবস্ক্রাইব করুন",
+      "email_placeholder": "আপনার ইমেইল লিখুন",
+      "subscribe_button": "সাবস্ক্রাইব"
+    },
+    "copyright": "© ২০২৪ আমারপ্লট। সকল অধিকার সংরক্ষিত। বাংলাদেশের জন্য ❤️ দিয়ে তৈরি।"
+  }
+}

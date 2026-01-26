@@ -1,0 +1,31 @@
+# .github/workflows/vercel-deploy.yml
+name: Deploy Frontend to Vercel
+
+on:
+  push:
+    branches:
+      - main # change this to your deployment branch
+
+jobs:
+  # Job Name (Any)
+  deploy:
+    # Where will run?
+    runs-on: ubuntu-latest
+    environment: development
+    # Which steps will run?
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install Vercel CLI
+        run: npm install -g vercel
+
+      - name: Confirm Vercel Token is set
+        run: |
+          if [ -z "${{ secrets.VERCEL_TOKEN }}" ]; then
+            echo "❌ VERCEL_TOKEN is not set"
+            exit 1
+          else
+            echo "✅ VERCEL_TOKEN is set"
+          fi
+
+      - name: Deploy to Vercel
+        run: vercel --prod --yes --token=${{ secrets.VERCEL_TOKEN }}

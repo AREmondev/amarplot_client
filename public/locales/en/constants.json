@@ -1,0 +1,139 @@
+{
+  "property_types": {
+    "Land": "Land",
+    "Flat": "Flat",
+    "Plot": "Plot",
+    "Mess": "Mess",
+    "House": "House"
+  },
+  "transaction_types": {
+    "Sell": "For Sale",
+    "Rent": "For Rent"
+  },
+  "cities": {
+    "Dhaka": "Dhaka",
+    "Chittagong": "Chittagong",
+    "Sylhet": "Sylhet",
+    "Rajshahi": "Rajshahi",
+    "Khulna": "Khulna"
+  },
+  "neighborhoods": {
+    "Gulshan": "Gulshan",
+    "Banani": "Banani",
+    "Dhanmondi": "Dhanmondi",
+    "Mirpur": "Mirpur",
+    "Uttara": "Uttara",
+    "Agrabad": "Agrabad"
+  },
+  "furnishing_types": {
+    "unfurnished": "Unfurnished",
+    "semi-furnished": "Semi-furnished",
+    "fully-furnished": "Fully-furnished"
+  },
+  "construction_statuses": {
+    "Ready to Move": "Ready to Move",
+    "Under Construction": "Under Construction",
+    "Upcoming": "Upcoming"
+  },
+  "facing_directions": {
+    "North": "North",
+    "South": "South",
+    "East": "East",
+    "West": "West",
+    "North-East": "North-East",
+    "North-West": "North-West",
+    "South-East": "South-East",
+    "South-West": "South-West"
+  },
+  "property_conditions": {
+    "New": "New",
+    "Resale": "Resale",
+    "Used": "Used",
+    "Renovated": "Renovated"
+  },
+  "amenities": {
+    "Parking": "Parking",
+    "Lift": "Lift",
+    "Security": "Security",
+    "Gym": "Gym",
+    "Swimming Pool": "Swimming Pool",
+    "Balcony": "Balcony",
+    "Garden": "Garden",
+    "Playground": "Playground",
+    "Community Hall": "Community Hall",
+    "Backup Generator": "Backup Generator",
+    "CCTV": "CCTV",
+    "Intercom": "Intercom"
+  },
+  "nearby_place_types": {
+    "Hospital": "Hospital",
+    "School": "School",
+    "Market": "Market",
+    "Transport": "Transport",
+    "Restaurant": "Restaurant",
+    "Other": "Other"
+  },
+  "legal_verification_statuses": {
+    "Verified": "Verified",
+    "Pending": "Pending",
+    "Rejected": "Rejected"
+  },
+  "property_statuses": {
+    "published": "Published",
+    "draft": "Draft",
+    "pending": "Pending",
+    "active": "Active",
+    "sold": "Sold",
+    "rented": "Rented"
+  },
+  "sort_options": {
+    "createdAt": "Date",
+    "newest": "Newest First",
+    "oldest": "Oldest First",
+    "price": "Price",
+    "price-high": "Price: High to Low",
+    "price-low": "Price: Low to High",
+    "views_count": "Views",
+    "favorites_count": "Favorites",
+    "name": "Name A-Z",
+    "progress": "Most Progress",
+    "relevance": "Most Relevant"
+  },
+  "price_ranges": {
+    "0-500000": "Under ৳5 Lakh",
+    "500000-1000000": "৳5-10 Lakh",
+    "1000000-2000000": "৳10-20 Lakh",
+    "2000000-5000000": "৳20-50 Lakh",
+    "5000000-10000000": "৳50 Lakh - 1 Crore",
+    "10000000+": "Above ৳1 Crore"
+  },
+  "community_categories": {
+    "Investment": "Investment",
+    "Student": "Student",
+    "Regional": "Regional",
+    "Professional": "Professional",
+    "Business": "Business",
+    "Educational": "Educational"
+  },
+  "user_types": {
+    "student": "Student",
+    "businessman": "Businessman",
+    "job_holder": "Job Holder",
+    "investor": "Investor",
+    "other": "Other"
+  },
+  "document_types": {
+    "nid": "National ID",
+    "smart_nid": "Smart NID",
+    "passport": "Passport",
+    "birth_certificate": "Birth Certificate"
+  },
+  "room_options": {
+    "any": "Any",
+    "1": "1",
+    "2": "2",
+    "3": "3",
+    "4": "4",
+    "5": "5+"
+  }
+}

@@ -1,0 +1,143 @@
+{
+  "search_address": "ঠিকানা খুঁজুন",
+  "use_current_location": "বর্তমান অবস্থান ব্যবহার করুন",
+  "loading": "লোড হচ্ছে...",
+
+  "hero": {
+    "badge": "🏡 আপনার নিখুঁত সম্পত্তি খুঁজুন",
+    "title": "আমারপ্লটের সাথে আপনার স্বপ্নের সম্পত্তি আবিষ্কার করুন",
+    "subtitle": "আমাদের আধুনিক প্ল্যাটফর্মের সাথে জমি, ফ্ল্যাট, প্লট এবং মেস স্পেস কিনুন, বিক্রি করুন বা ভাড়া নিন। ৩ডি ট্যুর, দামের ট্রেন্ড এবং কমিউনিটি ইনসাইট সহ যাচাইকৃত সম্পত্তি খুঁজুন।",
+    "search_placeholder": "অবস্থান, শহর বা এলাকা লিখুন...",
+    "property_type_placeholder": "সম্পত্তির ধরন",
+    "price_range_placeholder": "দামের পরিসর",
+    "transaction_type_placeholder": "অ্যাকশনের ধরন",
+    "search_button": "সম্পত্তি খুঁজুন",
+    "advanced_button": "উন্নত",
+    "stats": {
+      "properties_listed": "তালিকাভুক্ত সম্পত্তি",
+      "happy_customers": "সন্তুষ্ট গ্রাহক",
+      "cities_covered": "আওতাভুক্ত শহর",
+      "support_available": "সহায়তা উপলব্ধ"
+    }
+  },
+  "auth": {
+    "welcome_back_title": "Soykot"
+  },
+
+  "categories": {
+    "badge": "🏘️ সম্পত্তির বিভাগ",
+    "title": "বিভাগ অনুযায়ী অন্বেষণ করুন",
+    "subtitle": "আপনার প্রয়োজন অনুযায়ী নিখুঁত সম্পত্তির ধরন খুঁজুন। আবাসিক ফ্ল্যাট থেকে বাণিজ্যিক জমি পর্যন্ত।",
+    "land": {
+      "title": "জমি",
+      "description": "কৃষি ও বাণিজ্যিক জমির প্লট"
+    },
+    "flat": {
+      "title": "ফ্ল্যাট",
+      "description": "আবাসিক অ্যাপার্টমেন্ট ও ফ্ল্যাট"
+    },
+    "plot": {
+      "title": "প্লট",
+      "description": "আবাসিক ও বাণিজ্যিক প্লট"
+    },
+    "mess": {
+      "title": "মেস স্পেস",
+      "description": "ছাত্র ও কর্মজীবী পেশাদারদের মেস"
+    },
+    "actions": {
+      "buy": {
+        "title": "সম্পত্তি কিনুন",
+        "description": "কেনার জন্য আপনার স্বপ্নের সম্পত্তি খুঁজুন",
+        "link": "সম্পত্তি ব্রাউজ করুন →"
+      },
+      "rent": {
+        "title": "সম্পত্তি ভাড়া নিন",
+        "description": "আপনার এলাকায় ভাড়ার সম্পত্তি খুঁজুন",
+        "link": "ভাড়ার তালিকা দেখুন →"
+      },
+      "sell": {
+        "title": "সম্পত্তি বিক্রি করুন",
+        "description": "বিক্রয়ের জন্য আপনার সম্পত্তি তালিকাভুক্ত করুন",
+        "link": "সম্পত্তি তালিকাভুক্ত করুন →"
+      }
+    }
+  },
+  "property": {
+    "overview": "সংক্ষিপ্ত বিবরণ",
+    "description": "বিবরণ",
+    "features_amenities": "বৈশিষ্ট্য ও সুবিধাসমূহ",
+    "nearby_places": "আশেপাশের স্থান",
+    "bedrooms": "শোবার ঘর",
+    "bathrooms": "বাথরুম",
+    "size": "আকার",
+    "property_type": "সম্পত্তির ধরন",
+    "transaction_type": "লেনদেনের ধরন",
+    "year_built": "নির্মাণের বছর",
+    "facing": "মুখোমুখি",
+    "no_description": "কোনো বিবরণ উপলব্ধ নেই।",
+    "view_details": "বিস্তারিত দেখুন",
+    "beds": "বেড",
+    "baths": "বাথ",
+    "for": "জন্য",
+    "property_not_found": "সম্পত্তি পাওয়া যায়নি।",
+    "failed_to_load": "সম্পত্তির বিবরণ লোড করতে ব্যর্থ। আবার চেষ্টা করুন।"
+  },
+  "pages": {
+    "my_properties": "আমার সম্পত্তি",
+    "saved_properties": "সংরক্ষিত সম্পত্তি",
+    "no_properties_listed": "আপনি এখনো কোনো সম্পত্তি তালিকাভুক্ত করেননি।",
+    "no_saved_properties": "আপনি এখনো কোনো সম্পত্তি সংরক্ষণ করেননি।",
+    "loading_properties": "আপনার সম্পত্তি লোড হচ্ছে...",
+    "loading_saved_properties": "আপনার সংরক্ষিত সম্পত্তি লোড হচ্ছে...",
+    "failed_load_properties": "আপনার সম্পত্তি লোড করতে ব্যর্থ। আবার চেষ্টা করুন।",
+    "failed_load_saved_properties": "আপনার সংরক্ষিত সম্পত্তি লোড করতে ব্যর্থ। আবার চেষ্টা করুন।"
+  },
+  "view": "দেখুন",
+  "edit": "সম্পাদনা",
+  "delete": "মুছুন",
+  "all": "সব",
+  "recently_saved": "সম্প্রতি সংরক্ষিত",
+  "oldest_first": "পুরাতন প্রথমে",
+  "most_progress": "সর্বাধিক অগ্রগতি",
+  "name_a_z": "নাম (ক-য)",
+  "sort_by": "সাজান",
+  "unknown_step": "অজানা ধাপ",
+  "just_now": "এইমাত্র",
+  "hours_ago": "ঘন্টা আগে",
+  "saved": "সংরক্ষিত",
+  "continue": "চালিয়ে যান",
+  "no_drafts_found": "কোনো খসড়া পাওয়া যায়নি",
+  "try_adjusting_search": "আপনার অনুসন্ধান শর্তাবলী সামঞ্জস্য করার চেষ্টা করুন",
+  "draft_properties": "খসড়া সম্পত্তি",
+  "drafts_saved": "খসড়া সংরক্ষিত",
+  "success": "সফল",
+  "draft_deleted_success": "খসড়া সফলভাবে মুছে ফেলা হয়েছে",
+  "error": "ত্রুটি",
+  "failed_delete_draft": "খসড়া মুছতে ব্যর্থ। পরে আবার চেষ্টা করুন।",
+  "unknown": "অজানা",
+  "last_saved": "শেষ সংরক্ষিত",
+  "at": "এ",
+  "location_not_specified": "অবস্থান নির্দিষ্ট করা হয়নি",
+  "location_details_unavailable": "অবস্থানের বিবরণ উপলব্ধ নেই",
+  "no_properties_found": "কোনো সম্পত্তি পাওয়া যায়নি",
+  "no_properties_matching_criteria": "আপনার মানদণ্ডের সাথে মিলে এমন কোনো সম্পত্তি নেই।",
+  "no_image": "কোনো ছবি নেই",
+  "filter": "ফিল্টার",
+  "published": "প্রকাশিত",
+  "pending": "অপেক্ষমাণ",
+  "drafts": "খসড়া",
+  "delete_property": "সম্পত্তি মুছুন",
+  "delete_property_confirmation": "আপনি কি নিশ্চিত যে আপনি এই সম্পত্তিটি মুছতে চান? এই কাজটি পূর্বাবস্থায় ফেরানো যাবে না।",
+  "cancel": "বাতিল",
+  "type_not_specified": "ধরন নির্দিষ্ট করা হয়নি",
+  "no_description_available": "কোনো বিবরণ উপলব্ধ নেই",
+  "price_not_set": "দাম নির্ধারণ করা হয়নি",
+  "overview": "সংক্ষিপ্ত বিবরণ",
+  "my_properties": "আমার সম্পত্তি",
+  "analytics": "বিশ্লেষণ",
+  "settings": "সেটিংস",
+  "profile": "প্রোফাইল",
+  "sign_out": "সাইন আউট",
+  "loading_properties": "সম্পত্তি লোড হচ্ছে...",
+  "untitled_property": "শিরোনামহীন সম্পত্তি"
+}
