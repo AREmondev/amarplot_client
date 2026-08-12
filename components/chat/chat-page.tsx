@@ -106,6 +106,7 @@ export default function ChatPage() {
           setInitialMessages(historicalMessages.map(toStoreMessage) as any);
         },
       );
+      console.log("cleanup", cleanup);
       setIsConnected(true);
       return () => {
         setIsConnected(false);

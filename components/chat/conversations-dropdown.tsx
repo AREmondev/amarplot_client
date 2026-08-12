@@ -31,7 +31,7 @@ const getConversationName = (conversation: any, currentUserId?: string) => {
     return conversation.group?.name || "Group Chat";
   } else {
     const otherParticipant = conversation.participants?.find(
-      (p: any) => p._id !== currentUserId
+      (p: any) => p._id !== currentUserId,
     );
     return otherParticipant?.name || "Unknown User";
   }
@@ -43,7 +43,7 @@ const getConversationAvatar = (conversation: any, currentUserId?: string) => {
     return conversation.group?.avatar || "/placeholder.svg";
   } else {
     const otherParticipant = conversation.participants?.find(
-      (p: any) => p._id !== currentUserId
+      (p: any) => p._id !== currentUserId,
     );
     return otherParticipant?.avatar || "/placeholder.svg";
   }
@@ -271,7 +271,7 @@ export const ConversationsDropdown: React.FC<ConversationsDropdownProps> = ({
           </div>
         )}
 
-        {!isLoading && !error && conversations.length > 0 && (
+        {!isLoading && !error && conversations && conversations.length > 0 && (
           <ScrollArea className="max-h-80">
             <div className="space-y-0">
               {conversations.slice(0, 10).map((conversation, index) => (

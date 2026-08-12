@@ -7,6 +7,7 @@ Your backend now supports the exact format your frontend expects. Here's the API
 ### GET /notification/my-notifications
 
 **Response:**
+
 ```json
 [
   {
@@ -37,6 +38,7 @@ Your backend now supports the exact format your frontend expects. Here's the API
 ### POST /notification
 
 **Request Body:**
+
 ```json
 {
   "type": "follow",
@@ -58,21 +60,23 @@ The backend uses WebSocket (Socket.IO) for real-time notifications. Here's how i
 ### WebSocket Events
 
 1. **Client connects and joins room:**
+
    ```javascript
-   socket.emit('joinRoom', { userId: 'user123' });
+   socket.emit("joinRoom", { userId: "user123" });
    ```
 
 2. **Server sends real-time notifications:**
+
    ```javascript
    // When a new notification is created
-   socket.on('newNotification', (notification) => {
-     console.log('New notification:', notification);
+   socket.on("newNotification", (notification) => {
+     console.log("New notification:", notification);
    });
    ```
 
 3. **Mark notification as read:**
    ```javascript
-   socket.emit('markAsRead', { notificationId: 'notification123' });
+   socket.emit("markAsRead", { notificationId: "notification123" });
    ```
 
 ## Frontend Integration Guide
@@ -87,8 +91,8 @@ npm install socket.io-client
 
 ```typescript
 // hooks/useNotifications.ts
-import { useEffect, useState } from 'react';
-import { io, Socket } from 'socket.io-client';
+import { useEffect, useState } from "react";
+import { io, Socket } from "socket.io-client";
 
 interface Notification {
   id: number;
@@ -108,33 +112,33 @@ export const useNotifications = (userId: string, token: string) => {
 
   useEffect(() => {
     // Initialize socket connection
-    const newSocket = io('http://localhost:3000', {
+    const newSocket = io("http://localhost:3000", {
       auth: {
-        token: token
-      }
+        token: token,
+      },
     });
 
     setSocket(newSocket);
 
     // Join user room for real-time notifications
-    newSocket.emit('joinRoom', { userId });
+    newSocket.emit("joinRoom", { userId });
 
     // Listen for new notifications
-    newSocket.on('newNotification', (notification: Notification) => {
-      setNotifications(prev => [notification, ...prev]);
-      setUnreadCount(prev => prev + 1);
+    newSocket.on("newNotification", (notification: Notification) => {
+      setNotifications((prev) => [notification, ...prev]);
+      setUnreadCount((prev) => prev + 1);
     });
 
     // Listen for notification updates
-    newSocket.on('notificationMarkedAsRead', ({ notificationId }) => {
-      setNotifications(prev => 
-        prev.map(notif => 
-          notif.id === parseInt(notificationId) 
+    newSocket.on("notificationMarkedAsRead", ({ notificationId }) => {
+      setNotifications((prev) =>
+        prev.map((notif) =>
+          notif.id === parseInt(notificationId)
             ? { ...notif, read: true }
-            : notif
-        )
+            : notif,
+        ),
       );
-      setUnreadCount(prev => Math.max(0, prev - 1));
+      setUnreadCount((prev) => Math.max(0, prev - 1));
     });
 
     // Fetch initial notifications
@@ -147,37 +151,39 @@ export const useNotifications = (userId: string, token: string) => {
 
   const fetchNotifications = async () => {
     try {
-      const response = await fetch('/api/notification/my-notifications', {
+      const response = await fetch("/api/notification/my-notifications", {
         headers: {
-          'Authorization': `Bearer ${token}`
-        }
+          Authorization: `Bearer ${token}`,
+          "ngrok-skip-browser-warning": "true",
+        },
       });
       const data = await response.json();
       setNotifications(data);
       setUnreadCount(data.filter((n: Notification) => !n.read).length);
     } catch (error) {
-      console.error('Failed to fetch notifications:', error);
+      console.error("Failed to fetch notifications:", error);
     }
   };
 
   const markAsRead = (notificationId: string) => {
     if (socket) {
-      socket.emit('markAsRead', { notificationId });
+      socket.emit("markAsRead", { notificationId });
     }
   };
 
   const markAllAsRead = async () => {
     try {
-      await fetch('/api/notification/mark-all-read', {
-        method: 'PATCH',
+      await fetch("/api/notification/mark-all-read", {
+        method: "PATCH",
         headers: {
-          'Authorization': `Bearer ${token}`
-        }
+          Authorization: `Bearer ${token}`,
+          "ngrok-skip-browser-warning": "true",
+        },
       });
-      setNotifications(prev => prev.map(n => ({ ...n, read: true })));
+      setNotifications((prev) => prev.map((n) => ({ ...n, read: true })));
       setUnreadCount(0);
     } catch (error) {
-      console.error('Failed to mark all as read:', error);
+      console.error("Failed to mark all as read:", error);
     }
   };
 
@@ -186,7 +192,7 @@ export const useNotifications = (userId: string, token: string) => {
     unreadCount,
     markAsRead,
     markAllAsRead,
-    refetch: fetchNotifications
+    refetch: fetchNotifications,
   };
 };
 ```
@@ -215,10 +221,10 @@ export const NotificationDropdown: React.FC<Props> = ({ userId, token }) => {
           <button onClick={markAllAsRead}>Mark all as read</button>
         )}
       </div>
-      
+
       <div className="notification-list">
         {notifications.map((notification) => (
-          <div 
+          <div
             key={notification.id}
             className={`notification-item ${!notification.read ? 'unread' : ''}`}
             onClick={() => !notification.read && markAsRead(notification.id.toString())}
@@ -249,7 +255,7 @@ async followUser(
   @GetUser() user: any
 ) {
   // Your follow logic here...
-  
+
   // Create notification
   await this.notificationService.create({
     userId: followDto.targetUserId,
@@ -263,7 +269,7 @@ async followUser(
       followerName: user.name
     }
   });
-  
+
   // The notification gateway will automatically emit this to the user's room
 }
 ```
@@ -271,7 +277,7 @@ async followUser(
 ## Available Notification Types
 
 - **follow**: User follow notifications
-- **save**: Property/listing save notifications  
+- **save**: Property/listing save notifications
 - **post**: Community post notifications
 - **message**: Chat/direct message notifications
 - **alert**: Property alert notifications

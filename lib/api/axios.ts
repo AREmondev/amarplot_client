@@ -10,6 +10,7 @@ const apiClient = axios.create({
   headers: {
     "Content-Type": "application/json",
     Accept: "application/json",
+    "ngrok-skip-browser-warning": "true",
   },
 });
 
@@ -22,7 +23,7 @@ apiClient.interceptors.request.use(
     }
     return config;
   },
-  (error) => Promise.reject(error)
+  (error) => Promise.reject(error),
 );
 
 // Response interceptor: Refresh token or sign out
@@ -40,10 +41,9 @@ apiClient.interceptors.response.use(
         console.log("refreshResult", refreshResult);
 
         if (refreshResult?.accessToken) {
-          originalRequest.headers[
-            "Authorization"
-          ] = `Bearer ${refreshResult.accessToken}`;
-          return apiClient(originalRequest); 
+          originalRequest.headers["Authorization"] =
+            `Bearer ${refreshResult.accessToken}`;
+          return apiClient(originalRequest);
         }
       } catch (refreshError) {
         // If refresh fails, sign out and redirect
@@ -60,7 +60,7 @@ apiClient.interceptors.response.use(
     }
 
     return Promise.reject(error);
-  }
+  },
 );
 
 export default apiClient;
